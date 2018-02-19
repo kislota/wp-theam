@@ -1,0 +1,151 @@
+<div class="container">
+    <div class="row">
+        <!-- Strat Left Side Content -->
+        <div class="col-lg-3 col-md-3 col-sm-4 copy_content_height" style="height: 5400px;">
+            <div class="left_sidebar scroll_parent" style="margin-top: -146px;">
+                <h2 class="course_title">Categories <span>Items</span></h2>
+                <div class="main_courses">
+                    <ul>
+                        <!-- ngRepeat: category in Categories -->
+                        <li>
+                            <a href="#" class="ng-binding">Desserts <span class="badge"></span></a>
+                        </li><!-- end ngRepeat: category in Categories -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- / End Left Side Content -->
+        <!-- Start Middle Content -->
+        <div class="col-lg-6 col-md-6 col-sm-8 content_height">
+            <div class="middle_content">
+                <h2 id="category_title" class="order_title">Main Courses <span> Items</span></h2>
+                <div class="tab-content">
+                    <div id="home" class="tab-pane fade in active">
+                        <div class="single_product">
+                            <div class="left_column">
+                                <div class="product_image">
+                                    <img src="images/product1.jpg" alt="" width="50">
+                                </div>
+                                <div class="product_title">
+                                    <h2><span>023.</span> SWEET &amp; SOUR SAUCE
+                                        HONG KONG STYLE</h2>
+                                </div>
+                                <div class="product_description">
+                                    <p>Sweet &amp; sour sauce with green pepper. onion and
+                                        pineapple</p>
+                                </div>
+                            </div>
+
+                            <div class="right_column">
+                                <ul class="content_right_colum_list">
+                                    <div>
+                                        <li class="col-xs-8 col-sm-8">
+                                            <span class="item_name">A Chicken </span>
+                                            <span>
+                                                    £ 6.99
+                                                    <img class="plus" src="/images/plus.png" alt="">
+                                                </span>
+                                        </li>
+                                        <span class="removeBtn">
+                                                <img class="plus" src="/images/minus.png" alt="">
+                                            </span>
+                                    </div>
+                                    <div ng-repeat="variant in item.variants" ng-if="item.variants.length > 1"
+                                         class="ng-scope">
+                                        <li class="col-xs-8 col-sm-8" ng-click="addItemToBascket(item, variant)">
+                                            <span class="item_name ng-binding">F Tofu </span>
+                                            <span class="ng-binding">
+                                                    £ 5.99
+                                                    <img class="plus" src="/images/plus.png" alt="">
+                                                </span>
+                                        </li>
+                                        <span class="removeBtn ng-hide"
+                                              ng-show="variant.count &amp;&amp; !$root.isNotMobile"
+                                              ng-click="removeItemFromMobile(item, variant)">
+                                                <img class="plus" src="/images/minus.png" alt="">
+                                            </span>
+                                    </div>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- / End Middle Content -->
+        <!-- Start Right Sidebar -->
+        <div class="col-lg-3 col-md-3 col-md-offset-0 col-sm-6 col-sm-offset-6 copy_content_height">
+            <div class="right_sidebar scroll_parent" style="margin-top: 0px;">
+                <!-- ngIf: !$root.isNotMobile && showBasket -->
+                <div class="order_box">
+                    <h2 class="order_box_title">
+                        <span class="your_order">Your Order </span>
+                        <span class="cart_icon"><img src="images/icon_cart_light_gray.svg" alt=""></span>
+                    </h2>
+                    <form action="" class="ng-pristine ng-valid">
+                        <!-- Start Added Inner Scroll on Online Order Basket Items -->
+                        <!-- Added Basket Single item Wrapper -->
+                        <div class="inner_scrolling_div" tabindex="3" style="overflow: hidden; outline: none;">
+                            <!-- ngRepeat: order in cart -->
+                            <div id="buttom"></div>
+                        </div>
+                        <!-- / Added Basket Single item Wrapper -->
+                        <div class="sub_total_discount">
+                            <ul>
+                                <li>
+                                    <span class="subtotal">Subtotal</span>
+                                    <span id="subtotal" class="item_price">£ 0.00</span>
+                                </li>
+                                <li>
+                                    <span class="subtotal">Discount</span>
+                                    <span id="discount" class="item_price">£ 0.00</span>
+                                </li>
+                                <li>
+                                    <span class="subtotal">Delivery</span>
+                                    <span id="deliveryType" class="item_price">£ 1.00</span>
+                                </li>
+                            </ul>
+                        </div>
+
+
+                        <!-- Updated Basket -->
+                        <div class="grand_total order_now_section">
+                            <div class="total">
+                                <p>Total <span id="total">£ 1.00</span></p>
+                            </div>
+                        </div>
+
+                        <div class="single_item busket_radio">
+                            <ul>
+                                <li class="active">
+                                    <input type="radio" id="delivery" name="address" value="Delivery">
+                                    <label for="option"> <span></span> Delivery </label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="collection" name="address" value="Collection">
+                                    <label for="option"> <span></span> Collection </label>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="order_now_section">
+                            <div class="total">
+                                <!-- ngIf: cart.length > 0 -->
+                            </div>
+                        </div>
+                        <!-- / Updated Basket -->
+                    </form>
+                </div>
+
+                <div class="payment_enable">
+                    <img class="mastercard_color" src="images/icon_mastercard.svg" alt="Mastercard">
+                    <img class="visa_color" src="images/icon_visa.svg" alt="Visa">
+                    <img class="visa_color" src="/images/payment/american-express.png" alt="American Express">
+                </div>
+            </div>
+        </div>
+        <!-- / End Right Sidebar -->
+    </div>
+</div>
+
+http://wp-the-oak.loc/shop/?add-to-cart=85&variation_id=87

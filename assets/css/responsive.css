@@ -1,0 +1,761 @@
+
+
+/* Medium Layout: 1280px. */
+@media only screen and (min-width: 992px) and (max-width: 1220px) {
+    .top_menu a {
+        padding: 0 15px;
+    }
+
+    .right_bottom ul li {
+        margin-left: 10px;
+    }
+
+    .left_column {
+        width: 65%;
+    }
+
+    .footer_social_icon a {
+        padding: 32px 20px;
+    }
+
+    .footer_left p {
+        font-size: 12px;
+    }
+
+    .footer_social_icon a {
+        padding: 0;
+    }
+
+    ul#menu li a {
+        margin-right: 30px;
+    }
+
+    .confirm_checkout_page .form-group.address input {
+        width: 55%;
+    }
+
+    .confirm_checkout_page .form-group.address button {
+        padding: 10px 15px;
+    }
+}
+/* Tablet Layout: 768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    ul#menu li a {
+        letter-spacing: 0;
+        margin-right: 17px;
+    }
+
+    .phone_number p a {
+        padding: 12px 0;
+    }
+
+    .right_top_menu {
+        margin-top: 0px;
+    }
+
+    .top_menu a {
+        padding: 0 8px;
+    }
+
+    .cart img {
+        margin-top: 10px;
+        width: 20px;
+    }
+
+    .navbar-nav {
+        margin: 0;
+    }
+    /* .logo { margin-top: 15px } */
+    ul.top_menu li.has_dropdown {
+        margin-left: 10px;
+    }
+
+    .top_menu li.offer_list {
+        padding-right: 10px;
+    }
+
+    .middle_content {
+        margin-bottom: 50px;
+    }
+
+    .left_column {
+        float: left;
+        width: 63%;
+    }
+
+    .footer_left {
+        text-align: center;
+    }
+
+        .footer_left p {
+            text-align: center;
+        }
+
+    .footer_social_icon a {
+        padding: 30px 25px;
+    }
+
+    .scrollToTop {
+        border-left: 0;
+    }
+
+    .footer_left {
+        padding: 30px 0 0;
+    }
+
+    .scrolltop li {
+        float: none;
+        text-align: center;
+    }
+
+    a.scrollToTop {
+        border: 0 solid #ccc;
+        height: inherit;
+        margin: 26px 0;
+        padding: 0;
+        text-align: center;
+        width: inherit;
+    }
+
+    .carousel_list .single_list ul li a {
+        padding: 12px 10px;
+    }
+
+    .footer_social_icon {
+        float: right;
+        text-align: center;
+    }
+
+        .footer_social_icon a {
+            padding: 0;
+        }
+
+    .confirm_checkout_page .form-group.address input {
+        width: 55%;
+    }
+
+    .confirm_checkout_page .form-group.address button {
+        padding: 10px 15px;
+    }
+
+    .read_more_button li {
+        margin-left: 10px;
+    }
+
+    .single_widget .search_box input {
+        width: 80%;
+    }
+
+    .payment_form .form-group.submit_button button[type="reset"] {
+        width: 100%;
+    }
+
+    .payment_form .form-group.submit_button button[type="submit"] {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .form-group.expiry_fields_month {
+        float: none;
+        width: 100%;
+    }
+
+    .expiry_fields_year {
+        float: none;
+        width: 100%;
+    }
+
+    .cvv_fields {
+        float: none !important;
+        width: 100% !important;
+    }
+}
+/* Mobile Layout: 320px. */
+@media only screen and (max-width: 767px) {
+
+    .cvv_fields {
+        float: none !important;
+        width: 100% !important;
+    }
+
+    .form-group.expiry_fields_month {
+        float: none;
+        width: 100%;
+    }
+
+    .expiry_fields_year {
+        float: none;
+        width: 100%;
+    }
+
+    .payment_form .form-group.submit_button button[type="submit"] {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .payment_form .form-group.submit_button button[type="reset"] {
+        width: 100%;
+    }
+
+    .logo {
+        margin: 0 auto;
+        max-width: 200px;
+    }
+
+    .is-sticky .mainmenu_area {
+        position: fixed !important;
+    }
+
+    .left_sidebar.fixed,
+    .right_sidebar.fixed {
+        margin: 0 !important;
+    }
+
+    .mainmenu_area .mainmenu.navbar-collapse {
+        background: #333 none repeat scroll 0 0;
+        left: 0;
+        position: absolute;
+        top: 47px;
+        z-index: 999;
+    }
+
+    #menu li {
+        border-bottom: 1px solid #555;
+        display: block;
+        float: none;
+        padding: 0 15px;
+        width: 100%;
+    }
+
+    ul#menu li a {
+        background: transparent none repeat scroll 0 0;
+        border: 0 none;
+        display: block;
+        margin: 0;
+        padding: 10px 0px;
+    }
+
+        ul#menu li.active a,
+        ul#menu li a:hover {
+            border: none;
+            color: #BE9449;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+
+    .navbar-nav {
+        margin: 0px;
+    }
+
+    .top_menu li {
+        float: left;
+        margin: 8px 0;
+    }
+
+    .header_area {
+        padding: 0 0 10px;
+    }
+
+    .logo {
+        text-align: center;
+    }
+
+    .phone_number {
+        text-align: center;
+    }
+
+        .phone_number p a {
+            padding: 5px 0;
+        }
+
+    .left_column {
+        float: left;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .middle_content {
+        margin-bottom: 50px;
+    }
+
+    .footer_widgets {
+        margin-bottom: 30px;
+        overflow: hidden;
+    }
+
+    .footer_left {
+        padding: 30px 0 0;
+        text-align: center;
+    }
+
+    .slider_text h2 {
+        font-size: 25px;
+    }
+
+    .slider_text p {
+        font-size: 12px;
+    }
+
+    .footer_left p {
+        text-align: center;
+    }
+
+    .footer_menu {
+        overflow: hidden;
+        padding: 25px 0 10px;
+        text-align: center;
+    }
+
+        .footer_menu li {
+            display: inline;
+            float: none;
+        }
+
+    .footer_social_icon {
+        float: none;
+        text-align: center;
+    }
+
+        .footer_social_icon li {
+            display: inline;
+            float: none;
+        }
+
+            .footer_social_icon li.scrolltop {
+                position: absolute;
+                right: 0;
+            }
+
+    .scrollToTop {
+        border-left: 0 none;
+    }
+
+    .footer_social_icon a {
+        font-size: 30px;
+        margin: 15px 30px;
+        padding: 0;
+    }
+
+    .left_side_info {
+        float: none;
+        width: 100%;
+    }
+
+        .left_side_info.right_width {
+            padding-left: 0;
+        }
+
+        .left_side_info.left_width {
+            padding-right: 0;
+        }
+
+    .submit_button input[type="submit"],
+    .from-group input[type="submit"] {
+        width: 100%;
+    }
+
+    .left_sidebar .checkout_order {
+        margin-bottom: 50px;
+    }
+
+    .middle_content h2.order_title {
+        margin: 30px 0 60px;
+    }
+
+    .middle_content ul.nav.nav-tabs {
+        top: 50px;
+    }
+
+    .scrolltop li {
+        float: none;
+        text-align: center;
+    }
+
+    a.scrollToTop {
+        border: 0 solid #ccc;
+        height: inherit;
+        margin: 0;
+        padding: 27px 0;
+        width: inherit;
+    }
+
+    .footer_menu a {
+        margin: 0 13px;
+    }
+
+    ul.top_menu li.dropdown.open ul.dropdown-menu {
+        left: -110px;
+    }
+
+    .confirm_checkout_page .form-group .single_fields {
+        float: none;
+        margin-bottom: 15px;
+        overflow: hidden;
+        width: 100%;
+    }
+
+        .confirm_checkout_page .form-group .single_fields.left_side {
+            padding-right: 0;
+        }
+
+        .confirm_checkout_page .form-group .single_fields.right_side {
+            padding-left: 0;
+        }
+
+    .confirm_checkout_page .payment_enable {
+        margin-top: 0;
+    }
+
+    .confirm_checkout_page .submit_button {
+        margin-bottom: 0;
+        margin-top: 15px;
+    }
+
+    .cart img {
+        margin-top: 0px;
+    }
+
+    .form-group .single_fields.left_side .payment_enable {
+        text-align: center;
+    }
+
+    .copy_content_height {
+        height: inherit !important;
+    }
+
+    .scroll_parent {
+        margin: 0 !important;
+    }
+
+    /* Home page */
+    .slider_content_left {
+        margin-left: 25px;
+        margin-top: 160px;
+    }
+
+    .single_news_list {
+        margin-bottom: 30px;
+        overflow: hidden;
+    }
+
+    .home_right_sidebar {
+        margin-top: 50px;
+    }
+
+    .slider_text {
+        margin-bottom: 20px;
+    }
+
+    ul.top_menu li.dropdown.open ul.dropdown-menu {
+        border-top-left-radius: 5px;
+        border-top-right-radius: 0;
+    }
+
+    .request_quote_form_right {
+        padding-left: 0;
+    }
+
+    .register_form, .register_form.request_quote {
+        padding: 0;
+    }
+
+    .mobile_top_margin {
+        margin-top: 40px;
+    }
+
+    .mobile_bottom_margin {
+        margin-bottom: 40px;
+    }
+
+
+
+    /* About Page Responsive css */
+    .about_single_section .about_left {
+        float: none;
+        width: 100%;
+    }
+
+    .about_single_section .about_right {
+        float: none;
+        width: 100%;
+    }
+
+
+
+    /* Contact Page Responsive CSS */
+    .form-group.required_fields.message_box {
+        height: 160px;
+        position: relative;
+    }
+
+    .contact_page_area .contact_page {
+        float: left;
+        width: 100%;
+    }
+
+    .contact_form {
+        margin: 35px 15px 0;
+    }
+
+    .contact_bottom_right {
+        margin-top: 50px;
+        padding-left: 0;
+    }
+
+    .news_item_right select {
+        width: 130px;
+    }
+
+    .news_title.left {
+        width: 100%;
+    }
+
+    .news_description.right {
+        width: 100%;
+    }
+
+    .right_column {
+        float: right;
+        width: 100%;
+    }
+
+    .content_right_colum_list li {
+        border: 2px solid #d5d8e0;
+        border-radius: 5px;
+        display: inline-block;
+        margin-bottom: 5px;
+        /*width: 90%;*/
+        padding: 7px 12px;
+        position: relative;
+        cursor: pointer;
+    }
+
+    /*.content_height {
+        display: none;
+    }
+
+    .order_box {
+        display: none;
+    }*/
+
+    .payment_enable {
+        margin-top: 5px;
+    }
+
+    ul.top_menu {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .top_menu a {
+        padding: 0 15px;
+    }
+
+
+    .cart span {
+        /*background: #be9449 none repeat scroll 0 0;*/
+        background-color: #ff0000;
+        border-radius: 50%;
+        color: #fff;
+        display: inline-block;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 700;
+        font-size: 20px;
+        height: 40px;
+        padding: 5px;
+        text-align: center;
+        width: 40px;
+        margin-right: -20px;
+        z-index: 9999999999;
+    }
+
+    .right_bottom ul li {
+        font-size: 15px;
+    }
+
+    .navbar-header button.navbar-toggle {
+        background-color: transparent;
+        background-image: none;
+        border: 1px solid #fff;
+        border-radius: 4px;
+        float: left;
+        margin: 12px 0;
+        padding: 15px 15px;
+        position: absolute;
+    }
+
+    .total p span {
+        font-size: 20px;
+    }
+
+    .sub_total_discount {
+        font-size: 15px;
+    }
+
+    .form-group.card_type_field {
+        width: 100%;
+    }
+
+    .form-group.card_number_field {
+        width: 100%;
+    }
+
+    select {
+        font-size: 20px;
+    }
+
+    .btn.btn-primary, .btn.btn-primary:hover, .btn.btn-primary:focus {
+        width: 100%;
+    }
+
+    .removeBtn {
+        background-color: #808080;
+        width: 100px;
+        height: 35px;
+        text-align: center;
+        border-radius: 5px;
+        margin-right: 5px;
+        vertical-align: middle;
+    }
+
+        .removeBtn img {
+            margin-top: 10px;
+        }
+}
+
+/* Wide Mobile Layout: 480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+    .removeBtn img {
+        margin-top: 10px;
+    }
+
+    .removeBtn {
+        background-color: #808080;
+        width: 100px;
+        height: 35px;
+        text-align: center;
+        border-radius: 5px;
+        margin-right: 5px;
+        vertical-align: middle;
+    }
+
+    .btn.btn-primary, .btn.btn-primary:hover, .btn.btn-primary:focus {
+        width: 100%;
+    }
+
+    select {
+        font-size: 20px;
+    }
+
+    .form-group.card_number_field {
+        width: 100%;
+    }
+
+    .form-group.card_type_field {
+        width: 100%;
+    }
+
+    .sub_total_discount {
+        font-size: 15px;
+    }
+
+    .total p span {
+        font-size: 20px;
+    }
+
+    .navbar-header button.navbar-toggle {
+        background-color: transparent;
+        background-image: none;
+        border: 1px solid #fff;
+        border-radius: 4px;
+        float: left;
+        margin: 12px 0;
+        padding: 15px 15px;
+        position: absolute;
+    }
+
+    .right_bottom ul li {
+        font-size: 15px;
+    }
+
+    .cart span {
+        background-color: #ff0000;
+        border-radius: 50%;
+        color: #fff;
+        display: inline-block;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 700;
+        font-size: 20px;
+        height: 40px;
+        padding: 5px;
+        text-align: center;
+        width: 40px;
+        margin-right: -20px;
+        z-index: 9999999999;
+    }
+
+    .top_menu a {
+        padding: 0 15px;
+    }
+
+    .right_column {
+        float: right;
+        width: 100%;
+    }
+
+
+    .content_right_colum_list li {
+        border: 2px solid #d5d8e0;
+        border-radius: 5px;
+        display: inline-block;
+        margin-bottom: 5px;
+        width: 90%;
+        padding: 7px 12px;
+        position: relative;
+        cursor: pointer;
+    }
+
+    /*.content_height {
+        display: none;
+    }
+
+    .order_box {
+        display: none;
+    }*/
+
+    .payment_enable {
+        margin-top: 5px;
+    }
+
+    ul.top_menu {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+
+    /* 404, 500, closed & coming soon pages | date: 30july16 */
+    .error_page_table {
+        height: auto;
+    }
+
+    .error_text {
+        width: 100%;
+        text-align: center;
+    }
+
+    .five_zero_zero_page .error_page_table {
+        height: auto;
+    }
+
+    .error_text h2 {
+        font-size: 24px;
+        line-height: auto;
+        margin-bottom: 50%;
+    }
+}
+/* Wide Mobile Layout: 480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+}

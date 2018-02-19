@@ -1,0 +1,19 @@
+﻿ID,Type,SKU,Name,Published,"Is featured?","Visibility in catalog","Short description",Description,"Date sale price starts","Date sale price ends","Tax status","Tax class","In stock?",Stock,"Backorders allowed?","Sold individually?","Weight (kg)","Length (cm)","Width (cm)","Height (cm)","Allow customer reviews?","Purchase note","Sale price","Regular price",Categories,Tags,"Shipping class",Images,"Download limit","Download expiry days",Parent,"Grouped products",Upsells,Cross-sells,"External URL","Button text",Position,"Attribute 1 name","Attribute 1 value(s)","Attribute 1 visible","Attribute 1 global"
+9,simple,115,"APPLE FRITTERS",1,0,visible,,,,,taxable,,1,,0,0,,,,,1,,,2.99,Desserts,,,http://the-oak-wp.szakweb.com/wp-content/uploads/2018/02/product1-1.jpg,,,,,,,,,0,,,,
+10,simple,116A,"PINEAPPLE FRITTERS",1,0,visible,,,,,taxable,,1,,0,0,,,,,0,,,2.99,Desserts,,,http://the-oak-wp.szakweb.com/wp-content/uploads/2018/02/product1-1.jpg,,,,,,,,,0,,,,
+11,simple,118,"Chocolate Sponge",1,0,visible,,,,,taxable,,1,,0,0,,,,,0,,,3.49,Desserts,,,http://the-oak-wp.szakweb.com/wp-content/uploads/2018/02/product1-1.jpg,,,,,,,,,0,,,,
+12,variable,119,"ICE CREAM (HAAGEN DAZS)",1,0,visible,,,,,taxable,,1,,0,0,,,,,0,,,,Desserts,,,http://the-oak-wp.szakweb.com/wp-content/uploads/2018/02/product1-1.jpg,,,,,,,,,0,"HAAGEN DAZS","Belgian Chocolate, Cookies &amp; Cream, Strawberry Cheesecake, Vanilla",0,1
+13,variation,,"ICE CREAM (HAAGEN DAZS) - Belgian Chocolate",1,0,visible,,,,,taxable,parent,1,,0,0,,,,,0,,,5.99,,,,,,,119,,,,,,1,"HAAGEN DAZS","Belgian Chocolate",,1
+14,variation,,"ICE CREAM (HAAGEN DAZS) - Cookies &amp; Cream",1,0,visible,,,,,taxable,parent,1,,0,0,,,,,0,,,5.99,,,,,,,119,,,,,,2,"HAAGEN DAZS","Cookies &amp; Cream",,1
+15,variation,,"ICE CREAM (HAAGEN DAZS) - Strawberry Cheesecake",1,0,visible,,,,,taxable,parent,1,,0,0,,,,,0,,,5.99,,,,,,,119,,,,,,3,"HAAGEN DAZS","Strawberry Cheesecake",,1
+16,variation,,"ICE CREAM (HAAGEN DAZS) - Vanilla",1,0,visible,,,,,taxable,parent,1,,0,0,,,,,0,,,5.99,,,,,,,119,,,,,,4,"HAAGEN DAZS",Vanilla,,1
+17,variable,120,"Soft Drink (Can 330 ml)",1,0,visible,,,,,taxable,,1,,0,0,,,,,0,,,,Drinks,,,http://the-oak-wp.szakweb.com/wp-content/uploads/2018/02/product1-1.jpg,,,,,,,,,0,"Can 330 ml","7UP, COKE, DIET COKE, FANTA",0,1
+18,variation,,"Soft Drink (Can 330 ml) - 7UP",1,0,visible,,,,,taxable,parent,1,,0,0,,,,,0,,,0.99,,,,,,,120,,,,,,1,"Can 330 ml",7UP,,1
+19,variation,,"Soft Drink (Can 330 ml) - COKE",1,0,visible,,,,,taxable,parent,1,,0,0,,,,,0,,,0.99,,,,,,,120,,,,,,2,"Can 330 ml",COKE,,1
+20,variation,,"Soft Drink (Can 330 ml) - DIET COKE",1,0,visible,,,,,taxable,parent,1,,0,0,,,,,0,,,0.99,,,,,,,120,,,,,,3,"Can 330 ml","DIET COKE",,1
+21,variation,,"Soft Drink (Can 330 ml) - FANTA",1,0,visible,,,,,taxable,parent,1,,0,0,,,,,0,,,0.99,,,,,,,120,,,,,,4,"Can 330 ml",FANTA,,1
+22,variable,121,"Soft Drink (Bottle 1.5 ltr)",1,0,visible,,,,,taxable,,1,,0,0,,,,,0,,,,Drinks,,,http://the-oak-wp.szakweb.com/wp-content/uploads/2018/02/product1-1.jpg,,,,,,,,,0,"Bottle 1.5 ltr","7UP, COKE, DIET COKE, Tango",0,1
+23,variation,,"Soft Drink (Bottle 1.5 ltr) - 7UP",1,0,visible,,,,,taxable,parent,1,,0,0,,,,,0,,,2.2,,,,,,,121,,,,,,1,"Bottle 1.5 ltr",7UP,,1
+24,variation,,"Soft Drink (Bottle 1.5 ltr) - COKE",1,0,visible,,,,,taxable,parent,1,,0,0,,,,,0,,,2.2,,,,,,,121,,,,,,2,"Bottle 1.5 ltr",COKE,,1
+25,variation,,"Soft Drink (Bottle 1.5 ltr) - DIET COKE",1,0,visible,,,,,taxable,parent,1,,0,0,,,,,0,,,2.2,,,,,,,121,,,,,,3,"Bottle 1.5 ltr","DIET COKE",,1
+26,variation,,"Soft Drink (Bottle 1.5 ltr) - Tango",1,0,visible,,,,,taxable,parent,1,,0,0,,,,,0,,,2.2,,,,,,,121,,,,,,4,"Bottle 1.5 ltr",Tango,,1
