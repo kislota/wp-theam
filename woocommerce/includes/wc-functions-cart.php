@@ -62,7 +62,7 @@ function theoak_woocommerce_cart_product() {
                         <li class="less">
                             <a onClick="updateQty('<?php echo $cart_item_key; ?>',
 							<?php echo $cart_item['quantity'] - 1; ?>,
-                            <?php echo $product_id; ?>)"
+							<?php echo $product_id; ?>)"
                                data-product_id="<?php echo $product_id;?>"
                                data-count="<?php echo $cart_item['quantity']; ?>">
                                 <img src="<?php echo $tpl_dir; ?>/images/icon_less_white.svg" alt="Less">
@@ -70,8 +70,8 @@ function theoak_woocommerce_cart_product() {
                         </li>
                         <li class="add">
                             <a onClick="updateQty('<?php echo $cart_item_key; ?>',
-	                        <?php echo $cart_item['quantity'] + 1; ?>,
-	                        <?php echo $product_id; ?>)"
+							<?php echo $cart_item['quantity'] + 1; ?>,
+							<?php echo $product_id; ?>)"
                                data-product_id="<?php echo $product_id;?>"
                                data-count="<?php echo $cart_item['quantity']; ?>">
                                 <img src="<?php echo $tpl_dir; ?>/images/icon_add_white.svg" alt="Add">
@@ -166,37 +166,41 @@ if ( ! function_exists( 'theoak_woocommerce_shop_cart' ) ) {
         </div>
         <div class="single_item busket_radio">
             <ul>
-                <?php
-
-                foreach( WC()->session->get('shipping_for_package_0')['rates'] as $rate_id =>$rate) {
-	                var_dump($rate->method_id);
+				<?php
+//				https://wordpress.org/plugins/woo-visual-hook-guide/
+//				https://www.wpdesk.net/blog/woocommerce-checkout-hooks/
+//				https://stackoverflow.com/questions/36300773/woocommerce-programmatically-changing-the-default-shipping-method
+//				https://help-wp.ru/woocommerce-nastrojka-oformleniya-zakaza-checkout/
+//				http://wpincode.com/kak-dobavit-novoe-pole-na-stranicu-oformleniya-zakaza-v-woocommerce/
+				foreach( WC()->session->get('shipping_for_package_0')['rates'] as $rate_id =>$rate) {
+					var_dump($rate->method_id);
 //                    if ( $rate->method_id == 'flat_rate' ) {
 //		                $default_rate_id = array( $rate_id );
 //		                break;
 //	                }
-                }
-//                if ($default_rate_id)
-//                    WC()->session->set('chosen_shipping_methods', $default_rate_id );
-//                var_dump($default_rate_id);
+				}
+				//                if ($default_rate_id)
+				//                    WC()->session->set('chosen_shipping_methods', $default_rate_id );
+				//                var_dump($default_rate_id);
 
-                $available_methods = WC()->shipping->packages[0]['rates'];
-//                $chosen_method = key($available_methods);
-//                WC()->session->set( 'chosen_shipping_methods', $chosen_method );
-                $chosen_method = WC()->session->get( 'chosen_shipping_methods');
-                var_dump($chosen_method);
-                $index = 0;
-                ?>
-            <?php foreach ( $available_methods as $method ) : ?>
-                <li>
-			        <?php
-			        printf( '<input type="radio" name="shipping_method[%1$d]" data-index="%1$d" id="shipping_method_%1$d_%2$s" value="%3$s" class="shipping_method" %4$s />
+				$available_methods = WC()->shipping->packages[0]['rates'];
+				//                $chosen_method = key($available_methods);
+				//                WC()->session->set( 'chosen_shipping_methods', $chosen_method );
+				$chosen_method = WC()->session->get( 'chosen_shipping_methods');
+				var_dump($chosen_method);
+				$index = 0;
+				?>
+				<?php foreach ( $available_methods as $method ) : ?>
+                    <li>
+						<?php
+						printf( '<input type="radio" name="shipping_method[%1$d]" data-index="%1$d" id="shipping_method_%1$d_%2$s" value="%3$s" class="shipping_method" %4$s />
 								<label for="shipping_method_%1$d_%2$s">%5$s</label>',
-				        $index++, sanitize_title( $method->id ), esc_attr( $method->id ), checked( $method->id, $chosen_method, false ), wc_cart_totals_shipping_method_label( $method ) );
-			        ?>
-                </li>
-	        <?php endforeach; ?>
-                </ul>
-                <ul>
+							$index++, sanitize_title( $method->id ), esc_attr( $method->id ), checked( $method->id, $chosen_method, false ), wc_cart_totals_shipping_method_label( $method ) );
+						?>
+                    </li>
+				<?php endforeach; ?>
+            </ul>
+            <ul>
                 <li id="Delivery" class="active">
                     <input onClick="javascript: shipping(1);" type="radio" checked id="option" name="address" value="1">
                     <label for="option"> <span></span> Delivery </label>
